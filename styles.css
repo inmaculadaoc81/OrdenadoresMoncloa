@@ -58,3 +58,33 @@
   .footer-brand img{width:170px}
   .contact-phone-main{max-width:100%}
 }
+
+/* WhatsApp icons — clean single-shape treatment */
+.wa-icon{
+  display:block;
+  flex:0 0 auto;
+  width:22px;
+  height:22px;
+}
+.wahead .wa-icon{color:#fff;width:20px;height:20px}
+.hero .wa-icon,.btn .wa-icon{color:#fff;width:24px;height:24px}
+
+/* Floating: one green circle only; no nested/double rings */
+.floating{
+  width:58px!important;
+  height:58px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:50%!important;
+  background:#25D366!important;
+  color:#fff!important;
+  display:grid!important;
+  place-items:center!important;
+  box-shadow:0 8px 24px rgba(0,0,0,.22)!important;
+  overflow:visible!important;
+}
+.floating .wa-icon{
+  width:31px!important;
+  height:31px!important;
+  color:#fff!important;
+}
