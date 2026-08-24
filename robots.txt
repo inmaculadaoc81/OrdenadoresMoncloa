@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /api/
-Sitemap: https://asusplace.com.es/sitemap.xml
+Sitemap: http://asusplace.com.es/sitemap.xml
