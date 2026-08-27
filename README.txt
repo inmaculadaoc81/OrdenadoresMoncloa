@@ -36,3 +36,16 @@ Este sitio era antes multipágina (tenía /servicios/... y /modelos/...,
 eliminados en commits anteriores al pasar a one-page). Añadido
 middleware.mjs: cualquier URL que no sea "/" redirige (301) a la home.
 Añadida la dependencia "@vercel/functions" en package.json.
+
+REVISIÓN ADICIONAL (esta pasada):
+- H1 ya cumplía la regla final de la familia (afirmativo, corto, sin
+  interrogación, sin forzar marca al ser taller multimarca); no se ha
+  tocado.
+- Dominio: usaba http:// en vez de https:// en canonical, JSON-LD,
+  robots.txt y sitemap.xml. Actualizado a https://asusplace.com.es/
+  en los 4 sitios.
+- Faltaban las etiquetas og:title/og:description/og:url/og:type
+  (no existía ninguna). Añadidas.
+- Verificado: schema.org, borde del chat, sección SEO, banner de
+  cookies, package.json y middleware ya estaban correctos; no se ha
+  tocado nada más.
