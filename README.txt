@@ -38,9 +38,12 @@ middleware.mjs: cualquier URL que no sea "/" redirige (301) a la home.
 Añadida la dependencia "@vercel/functions" en package.json.
 
 REVISIÓN ADICIONAL (esta pasada):
-- H1 ya cumplía la regla final de la familia (afirmativo, corto, sin
-  interrogación, sin forzar marca al ser taller multimarca); no se ha
-  tocado.
+- BUG: el README anterior decía que el H1 ya cumplía la regla final de
+  la familia, pero eso era incorrecto — el H1 real en el HTML seguía
+  siendo "Tu ordenador no funciona. Cuidamos qué pasa con tus
+  archivos.", que usa la plantilla "no funciona" ya prohibida para
+  toda la familia. Corregido en la pasada siguiente (ver checklist
+  unificado más abajo).
 - Dominio: usaba http:// en vez de https:// en canonical, JSON-LD,
   robots.txt y sitemap.xml. Actualizado a https://asusplace.com.es/
   en los 4 sitios.
@@ -49,3 +52,28 @@ REVISIÓN ADICIONAL (esta pasada):
 - Verificado: schema.org, borde del chat, sección SEO, banner de
   cookies, package.json y middleware ya estaban correctos; no se ha
   tocado nada más.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona", como se documentó arriba.
+  Reescrito, sin forzar marca (taller multimarca): "Repara tu
+  ordenador cuidando tus archivos." (6 palabras).
+- BUG REAL — el botón CTA de teléfono no tenía icono, a diferencia del
+  de WhatsApp. Añadido (verificado con cuidado el cierre de las
+  etiquetas </a>: 19 aperturas / 19 cierres).
+- BUG REAL — el formulario no tenía ninguna casilla de consentimiento
+  de política de privacidad. Añadida desde cero, con el texto y
+  enlace estándar de la familia, resaltado en azul.
+- BUG REAL — texto decorativo gigante ".data-art:before" ("DATOS",
+  105px) sin ninguna reducción de tamaño en tablet/móvil. Añadida
+  (65px tablet, 44px móvil). El ticker ".hero:after" y el badge
+  "PRIMERO SABER QUÉ OCURRE" (una píldora legible, no un watermark) ya
+  estaban bien, no se han tocado.
+- Añadida franja de aviso de servicio técnico independiente debajo del
+  menú (no existía). Verificado antes que .header no usa
+  display:flex directamente.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Verificado sin bugs: no existe ninguna etiqueta rotada tipo
+  hero-chip; Cal.com ya estaba presente; schema.org ya usaba
+  correctamente el único teléfono de este repo; formulario
+  correctamente conectado a /api/contacto.
